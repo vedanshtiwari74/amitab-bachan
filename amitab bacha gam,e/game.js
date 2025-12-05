@@ -3,10 +3,10 @@ let ctx = canvas.getContext("2d");
 
 // --- LOAD IMAGES ---
 let amitabhImg = new Image();
-amitabhImg.src = "amitabh.png";   // Your Amitabh image
+amitabhImg.src = "amitabh.png";   // Amitabh image file in same folder
 
 let flameImg = new Image();
-flameImg.src = "flame.png";       // Fire animation
+flameImg.src = "flame.png";       // Fire flame image
 
 // --- CHARACTER SETTINGS ---
 let amitabh = {
@@ -14,12 +14,10 @@ let amitabh = {
     y: 300,
     width: 60,
     height: 60,
-
-    gravity: 0.4,    // ⬅⬅ very slow fall  
-    lift: -12,       // ⬅⬅ soft jump  
+    gravity: 0.35,   // very slow gravity
+    lift: -12,       // smooth jump
     velocity: 0
 };
-
 
 // --- FIRE OBSTACLES ---
 let fires = [];
